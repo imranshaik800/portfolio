@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+
+
+nav {
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+}
+
+label.logo {
+    padding: 0 100px;
+    color: black;
+    font-weight: bold;
+    font-style: "roboto";
+    line-height: 80px;
+    font-size: 30px;
+    color: white;
+   
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    display: inline;
+    
+}
+
+nav ul li {
+    line-height: 80px;
+    display: inline;
+    margin:  0 5px;
+    list-style-type: none;
+    text-decoration: none;
+   
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+nav ul li:hover {
+    background-color: lightskyblue;
+    border-radius: 10px;
+    padding: 5px;
+  
+}
+
+a.active:hover {
+    background-color: pink;
+    position: fixed;
+}
+
+.checkbtn {
+    color: white;
+    font-size: 30px;
+    float: right;
+    display: inline;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+@media (max-width:952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    
+    }
+}
+
+@media (max-width:858px) {
+    label.logo {
+        font-size: 20px;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: red;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+    nav ul li {
+        display: block;
+       
+    }
+    nav ul li a {
+        font-size: 20px;
+    
+    }
+    a:hover,a.active{
+        background-color: green;
+
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+}
+
+.main-bgcontainer {
+    width: 100%;
+    height: 500px;
+    line-height: 90px;
+    background-size: cover;
+   
+    background-image: url("https://img.freepik.com/free-vector/blue-data-technology-background-vector-with-binary-code_53876-110871.jpg");
+}
+
+.home-textcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    
+    
+   
+
+}
+.home-role-section {
+    text-align: center;
+   color: white;
+    
+}
+
+.home-para-section {
+    color: red;
+    font-family: "roboto";
+    font-size: 30px;
+
+}
+
+.about-section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+.about-section-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.about-section-heading {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: left;
+    
+}
+
+.about-section-para {
+    font-size: 25px;
+    font-family: "roboto";
+    text-align: left;
+}
+
+@media screen and (min-width:350px) and (max-width:500px){
+    .about-section-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .home-para-section {
+        color: red;
+        font-family: "roboto";
+        font-size: 20px;
+    
+    }
+
+}
+.card-container {
+    box-shadow: 2px 2px 2px 2px lightblue;
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+
+}
+
+.college {
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.branch {
+    font-weight: bold;
+}
+
+.project-container {
+    width: 450px;
+    box-shadow: 2px 2px 2px 2px black;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 30px;
+    font-family: "roboto";
+    font-weight: bold;
+    color: black;
+}
+.project-description {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+}
